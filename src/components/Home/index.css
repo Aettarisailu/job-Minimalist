@@ -1,0 +1,286 @@
+/* General Styles */
+.container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Navbar */
+.nav-container {
+    height: 71px;
+    padding: 12px 120px;
+    background: #1C1C1C33;
+    border-bottom: 1px solid #FF777766;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoheading {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+/* Carousel Section */
+.curosole-container {
+    background-size: cover;
+    background-image: url("https://res.cloudinary.com/drevfgyks/image/upload/v1719102131/People/b47561aa2ad560235e2702e286a6d4b7_fotm1k.jpg");
+    width: 100%;
+    height: 527px;
+}
+
+.hero {
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 100px;
+    color: white;
+    padding-left: 30px;
+}
+
+.hero h2, .hero h3 {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.hero h2 {
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 56px;
+}
+
+.hero h3 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.landingButton {
+    margin-top: 20px;
+    width: 211px;
+    height: 52px;
+    background: white;
+    border: none;
+    color: #FE0000;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.landingButton:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+/* About Section */
+.Content_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.about-container, .about-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.left-line, .right-line, .left-line2, .right-line2, .products-line {
+    height: 5px;
+    background-color: #F27121;
+    border-radius: 5px;
+}
+
+.left-line, .right-line, .left-line2, .right-line2 {
+    width: 100%;
+    max-width: 480px;
+}
+
+.products-line {
+    margin-top: 180px;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.about-text {
+    color: #F27121;
+}
+
+.boldtext {
+    font-weight: bold;
+}
+
+/* Cards Section */
+.cards_container {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.card-container {
+    position: relative;
+    width: 100%;
+    max-width: 584px;
+    height: auto;
+    top: 63px;
+    margin: 20px 0;
+    border: 1px solid #CECECE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-image-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%;
+    background: url('https://res.cloudinary.com/drevfgyks/image/upload/v1719102131/People/b47561aa2ad560235e2702e286a6d4b7_fotm1k.jpg') no-repeat center center;
+    background-size: cover;
+    border: 1px solid #F0F0F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px;
+    border-radius: 5px;
+}
+
+.card-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.quick-view-button {
+    width: 211px;
+    height: 52px;
+    background-color: #FE0000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Footer Section */
+.footer-container {
+    width: 100%;
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-green-container {
+    width: 100%;
+    background-color: #25A769;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #CECECE;
+    padding: 10px;
+}
+
+.follow-us-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.follow-us-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+.social-media-icons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Modal */
+.custom-modal .modal-dialog {
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.custom-modal .modal-content {
+    padding: 20px;
+}
+
+.custom-modal .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-modal .modal-body img {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero {
+        margin-left: 0;
+        padding-left: 15px;
+        height: auto;
+    }
+
+    .hero h2, .hero h3 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .landingButton {
+        width: 100%;
+    }
+
+    .cards_container {
+        flex-direction: column;
+    }
+
+    .card-container {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .footer-container, .footer-green-container {
+        padding: 10px;
+    }
+
+    .follow-us-text {
+        font-size: 18px;
+    }
+
+    .custom-modal .modal-dialog {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+}
